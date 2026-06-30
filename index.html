@@ -5,28 +5,110 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>קרמה - בריסטה | הדואט מאת הדר סופר</title>
 
-  <!-- תצוגה מקדימה לשיתוף ברשתות חברתיות ובוואטסאפ -->
   <meta property="og:title" content="קרמה - בריסטה | הדואט מאת הדר סופר" />
-  <meta property="og:description" content="דואט רומנטי מפתיע, מלא חוכמה, רגש והומור, שמחבר בין עולמות שונים. קראו את ההמלצות הנלהבות!" />
-  <meta property="og:image" content="https://hadarsofer.co.il/images/imag_socail.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:url" content="https://hadarsofer.co.il/" />
+  <meta property="og:description" content="דואט רומנטי מפתיע, מלא חוכמה, רגש והומור, שמחבר בין עולמות שונים." />
+  <meta property="og:image" content="https://hadarsofer.github.io/books/images/Cover_Barista.jpeg" />
+  <meta property="og:url" content="https://hadarsofer.github.io/books/" />
   <meta property="og:type" content="website" />
 
-  <!-- מטא תגיות למנועי חיפוש -->
-  <meta name="description" content="דואט הספרים קרמה ובריסטה מאת הדר סופר. רומנים מפתיעים, מלאי חוכמה, רגש והומור, המחברים בין עולמות מנוגדים. המלצות קוראים רבות." />
-
-  <!-- קישורים לפונטים ועיצוב -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="css/style.css" />
+  
+  <style>
+    /* קרוסלת המלצות אוטומטית מבוססת CSS */
+    .carousel-container {
+      max-width: 600px;
+      margin: 30px auto 0 auto;
+      overflow: hidden;
+      position: relative;
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(65,35,17,0.05);
+      padding: 30px;
+      text-align: center;
+      border: 1px dashed var(--latte);
+    }
+    .carousel-track {
+      display: flex;
+      width: 300%;
+      animation: slideCarousel 15s infinite ease-in-out;
+    }
+    .carousel-slide {
+      width: 100%;
+      flex: 1;
+    }
+    @keyframes slideCarousel {
+      0%, 28% { transform: translateX(0); }
+      33%, 61% { transform: translateX(33.333%); }
+      66%, 95% { transform: translateX(66.666%); }
+      100% { transform: translateX(0); }
+    }
+
+    /* התאמת גריד הרכישה החדש לקו העיצובי שלך */
+    .purchase-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      max-width: 900px;
+      margin: 30px auto 40px auto;
+    }
+    .purchase-card {
+      background: #ffffff;
+      border: 1px solid var(--latte);
+      border-radius: 12px;
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      box-shadow: var(--shadow);
+      flex: 1;
+      min-width: 260px;
+      transition: transform 0.2s;
+    }
+    .purchase-card:hover { transform: translateY(-3px); }
+    .purchase-card img {
+      height: 220px;
+      object-fit: contain;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+    .purchase-card .btn {
+      width: 100%;
+      margin-top: auto;
+    }
+    .quote-card {
+      background: #ffffff; 
+      padding: 25px; 
+      border-radius: 8px; 
+      box-shadow: var(--shadow); 
+      border-right: 4px solid var(--coffee);
+    }
+  </style>
 </head>
 <body>
-  <a class="whatsapp-float" href="https://wa.me/972544828954?text=%D7%94%D7%99%D7%99%20%D7%94%D7%93%D7%A8%2C%20%D7%94%D7%92%D7%A2%D7%A0%D7%95%20%D7%93%D7%A8%D7%9A%20%D7%94%D7%90%D7%AA%D7%A8%20%D7%A9%D7%9C%20%D7%A7%D7%A8%D7%9E%D7%94%20%D7%95%D7%A0%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A2%D7%9C%20%D7%94%D7%A1%D7%A4%D7%A8" target="_blank" rel="noopener">💬</a>
+  <a class="whatsapp-float" href="https://wa.me/972544828954?text=%D7%94%D7%99%D7%99%20%D7%94%D7%93%D7%A8%2C%20%D7%94%D7%92%D7%A2%D7%A0%D7%9%20%D7%93%D7%A8%D7%9A%20%D7%94%D7%90%D7%AA%D7%A8%20%D7%A9%D7%9C%20%D7%A7%D7%A8%D7%9E%D7%94%20%D7%95%D7%A0%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A2%D7%9C%20%D7%94%D7%A1%D7%A4%D7%A8" target="_blank" rel="noopener">💬</a>
 
-<header class="hero section">
+  <nav class="main-nav">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+      <div class="nav-logo" style="font-weight: 800; font-size: 1.3rem; color: var(--coffee);">
+        הדר סופר | אתר הסופרת
+      </div>
+      <div class="nav-links" style="display: flex; gap: 20px;">
+        <a href="#">דף הבית</a>
+        <a href="#buy" style="color: var(--coffee); font-weight: 700;">רכישת הספרים</a>
+        <a href="#reviews">המלצות</a>
+        <a href="#author">על הסופרת</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero section">
     <div class="hero-bg"></div>
     <div class="container hero-grid reveal">
       <div class="hero-content">
@@ -34,30 +116,28 @@
         <h1>קְרֵמָה - בָּריסטה</h1>
         <h2>מאת הדר סופר</h2>
         <p class="lead">בעין טובה, בהומור ובלב מלא רגש, הדר סופר לוקחת אותנו בין שבילי סיפור אהבה מפעים של שני אנשים שעולמותיהם מנוגדים אלה לאלה. עכשיו בדואט שלם.</p>
-        <div class="hero-actions">
-          <!-- קישור ישיר לדואט המלא במשולם במקום גוגל סייט -->
-          <a class="btn primary" href="https://meshulam.co.il/purchase?b=cf26a15d90583e101c40a8e2467d4413" target="_blank" rel="noopener">רכשו את הדואט המודפס</a>
-          <a class="btn secondary" href="https://drive.google.com/file/d/12tlxNzzeP2KEYTHewlmIl41gtA93Ynm_/view?usp=sharing" target="_blank" rel="noopener">קראו פרק ראשון (קרמה)</a>
+        
+        <div class="hero-actions" style="display: flex; flex-direction: column; gap: 12px; max-width: 300px; margin-top: 25px;">
+          <a class="btn primary" href="https://meshulam.co.il/purchase?b=cf26a15d90583e101c40a8e2467d4413" target="_blank" rel="noopener">רכשו את הדואט המלא <span style="font-size:0.85rem; display:block; opacity:0.9;">מחיר מיוחד: 120 ₪</span></a>
+          <div style="display: flex; gap: 10px; width: 100%;">
+            <a class="btn primary" style="flex: 1; padding: 10px 5px; font-size: 0.95rem;" href="https://meshulam.co.il/purchase?b=3960c1d9ae10f39e191948188ecd9db6" target="_blank" rel="noopener">את 'בריסטה' <span style="font-size:0.8rem; display:block; opacity:0.9;">65 ₪</span></a>
+            <a class="btn primary light" style="flex: 1; padding: 10px 5px; font-size: 0.95rem;" href="https://meshulam.co.il/purchase?b=f9c1762773a8a9f286a3632289c96ef9" target="_blank" rel="noopener">את 'קרמה' <span style="font-size:0.8rem; display:block;">65 ₪</span></a>
+          </div>
         </div>
-        <p class="social-proof">★★★★★ מאות קוראות ממליצות: 'מרגש', 'חכם', 'סוחף' ו'נוגע בלב'</p>
       </div>
       <div class="cover-wrap">
-        <img src="images/book-cover.png" alt="כריכת הדואט קרמה ובריסטה מאת הדר סופר" class="book-cover" />
+        <img src="images/book-cover.png" alt="כריכת הספר בריסטה מאת הדר סופר" class="book-cover" />
       </div>
     </div>
   </header>
 
   <main>
-    <!-- המלצה מודגשת מעולם קטן -->
-    <section class="section review-highlight reveal" style="background-color: #fbf9f6; padding: 40px 0; border-top: 1px solid #f0ece7; border-bottom: 1px solid #f0ece7;">
+    <section class="section review-highlight reveal" style="padding: 40px 0; border-top: 1px solid var(--latte); border-bottom: 1px solid var(--latte);">
       <div class="container" style="text-align: center; max-width: 800px; margin: 0 auto;">
-        <p class="eyebrow" style="color: #8B5A2B; margin-bottom: 15px;">מי שקורא יודע</p>
-        <blockquote style="font-size: 1.3rem; line-height: 1.6; font-style: italic; color: #222; margin: 0 0 15px 0; font-weight: 600; border: none; padding: 0;">
-          “הספר הוא רומן עלילתי הכתוב באופן חופשי, זורם ומלא נגיעות הומוריסטיות והוא יכול להיות מצע נהדר לשיח. חכם, רגיש, עדין, מציף שאלות חשובות ומהווה פתח למחשבות רבות.”
+        <blockquote style="font-size: 1.3rem; line-height: 1.6; font-style: italic; margin: 0 0 15px 0; font-weight: 600; border: none; padding: 0;">
+          “הספר הוא רומן עלילתי הכתוב באופן חופשי, זורם ומלא נגיעות הומוריסטיות והוא יכול להיות מצע נהדר לשיח. חכם, רגיש, עדין...”
         </blockquote>
-        <cite style="font-size: 1.05rem; color: #666; font-style: normal; font-weight: 700; display: block;">
-          — אודי בן חמו, "עולם קטן" (סוללים דרך)
-        </cite>
+        <cite style="font-size: 1.05rem; font-style: normal; font-weight: 700; color: var(--coffee);">— אודי בן חמו, "עולם קטן"</cite>
       </div>
     </section>
 
@@ -65,116 +145,100 @@
       <div class="container narrow reveal">
         <p class="eyebrow">על הדואט</p>
         <h2>סיפור אהבה, מסע פנימי ומפגש בלתי צפוי</h2>
-        <p>הילה היא בחורה דתייה, סטודנטית לאדריכלות בתל אביב. יאיר הוא גרוש, חילוני, מקועקע וחסר מעצורים. מפגש מקרי בבית אבות מוביל אותם למסע משותף ומותח למען ילד, עם דדליין ברור. הם נאלצים להתמודד עם הוויכוחים הפנימיים שלהם, עם הפחדים והכאב, ולגלות האם אפשר למצוא דרך זה אל זו.</p>
-        <p>בדואט 'קרמה' ו'בריסטה', הדר סופר טווה בעדינות סיפור עמוק על הקשבה, אמונה וראיית הלב של האחר.</p>
+        <p class="lead">הילה היא בחורה דתייה ותל אביבית, יאיר הוא גרוש חילוני חסר מעצורים. מפגש מקרי בבית אבות מוביל אותם למסע משותף ומותח למען ילד, עם דדליין ברור. הם נאלצים להתמודד עם הוויכוחים הפנימיים שלהם, עם הפחדים והכאב, ולגלות האם אפשר למצוא דרך זה אל זו.</p>
       </div>
     </section>
 
     <section class="section features">
       <div class="container reveal">
-        <h2>למה קוראים נשבים בקסמו של הדואט?</h2>
         <div class="cards">
-          <article class="card"><span>☕</span><h3>מפגש בין עולמות</h3><p>חילונים - דתיים, תל אביב, כאב, חיפוש, קשר, זהות ואמונה — כולם נפגשים בסיפור אחד חי ונוגע.</p></article>
+          <article class="card"><span>☕</span><h3>מפגש בין עולמות</h3><p>חילונים - דתיים, תל אביב, כאב, חיפוש, קשר, זהות ואמונה נפגשים בסיפור אחד חי ונוגע.</p></article>
           <article class="card"><span>🤎</span><h3>רגש והומור</h3><p>כתיבה קולחת שמשלבת עומק, קלילות, רגעים מחויכים ונגיעה אמיצה בנושאים מורכבים.</p></article>
           <article class="card"><span>📖</span><h3>דמויות שנשארות</h3><p>הילה ויאיר ממשיכים ללכת עם הקוראים גם אחרי סיום הקריאה.</p></article>
-          <article class="card"><span>✨</span><h3>סוחף ועוצמתי</h3><p>דואט שלם מלא חוכמה, עימותים ואהבה בלתי צפויה, שמחבר בין לבבות ועולמות שונים.</p></article>
         </div>
       </div>
     </section>
 
-    <section class="section illustration reveal">
-      <div class="container illustration-card">
-        <img src="images/book-illustration.jpeg" alt="איור בהשראת הדואט קרמה ובריסטה" />
-        <div>
-          <p class="eyebrow">קרמה ובריסטה</p>
-          <h2>שני ספרים. שני עולמות. סיפור אחד.</h2>
-          <p>הדואט מצליח לשזור חוכמת חיים, הקשבה וראיית הלב של האחר בתוך עלילה מרגשת ומלאת תנועה, דרך שתי נקודות מבט.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section reviews">
+    <section class="section reviews" id="reviews">
       <div class="container reveal">
-        <p class="eyebrow">המלצות קוראים</p>
-        <h2>מה כתבו על הדואט</h2>
-        <div class="quote-grid">
-          <!-- ציטוטים נבחרים וחדשים (שודרגו) -->
-          <blockquote>“לא ראיתי כתיבה אמיצה כזו מנקודת מבט של אישה דתייה על אהבה וקשר... שיח כנה על דת ואמונה מנקודת מבט אישית ולא תיאולוגית. שאפו על הכתיבה הרגישה!”</blockquote>
-          <blockquote>“הספר וואווו! שקעתי בו בצורה עמוקה והוא פשוט סחף! ... הפרק האחרון גאוני...”</blockquote>
-          <blockquote>“וואי הדר את כשרון באמת אין לי מה להגיד... אי אפשר היה לעזוב את הספר לשנייה אחת.. קיבלתי ממנו מסר כ"כ חזק שאחדות היא סוד הקסם של העם שלנו!”</blockquote>
-          <blockquote>“גמעתי את הספר בשקיקה! ... הספר הקודם (קרמה) חזק מאוד, אבל זה (בריסטה) מרגיש לי תופס עוד יותר! הוא סוחף, מרתק, הופך את הבטן וממלא בדמעות של אושר.”</blockquote>
-          <blockquote>“לא חושבת שקראתי ספר כל כך רומנטי וטהור יחדיו.”</blockquote>
-          <blockquote>“זה ספר מהפכני שרלוונטי לכל יהודי ויהודיה. פשוט איחוד בעם.”</blockquote>
-        </div>
+        <p class="eyebrow" style="text-align: center;">חוות דעת</p>
+        <h2 style="text-align: center; margin-bottom: 40px;">מה כתבו על הדואט</h2>
         
-        <!-- גלריית המלצות מורחבת (כולל בריסטה) -->
-        <p class="eyebrow" style="margin-top: 40px; text-align: center;">גלריית המלצות - קרמה & בריסטה</p>
-        <div class="review-gallery">
-          <img src="images/review-1.png" alt="המלצה על הספר קרמה" />
-          <img src="images/review-2.png" alt="המלצה על הספר קרמה" />
-          <img src="images/review-3.png" alt="המלצה על הספר קרמה" />
-          <img src="images/review-4.png" alt="המלצה על הספר קרמה" />
-          <img src="images/review-5.jpeg" alt="המלצה על הספר קרמה" />
-          <!-- הוספת המלצות בריסטה מהקבצים -->
-          <img src="images/Barista1.jpeg" alt="המלצה על הספר בריסטה" />
-          <img src="images/Barista2.jpeg" alt="המלצה על הספר בריסטה" />
-          <img src="images/Barista3.jpeg" alt="המלצה על הספר בריסטה" />
-          <img src="images/Barista4.jpeg" alt="המלצה על הספר בריסטה" />
-          <img src="images/Barista5.jpeg" alt="המלצה על הספר בריסטה" />
+        <div class="quote-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-bottom: 20px;">
+          <div class="quote-card">
+            <p style="font-style: italic; line-height: 1.6; font-size: 1.05rem;">“לא חושבת שקראתי ספר כל כך רומנטי וטהור יחדיו.”</p>
+          </div>
+          <div class="quote-card" style="border-right-color: var(--espresso);">
+            <p style="font-style: italic; line-height: 1.6; font-size: 1.05rem;">“לא ראיתי כתיבה אמיצה כזו מנקודת מבט של אישה דתייה על אהבה וקשר... שיח כנה על דת ואמונה מנקודת מבט אישית ולא תיאולוגית. שאפו על הכתיבה הרגישה!”</p>
+          </div>
+          <div class="quote-card">
+            <p style="font-style: italic; line-height: 1.6; font-size: 1.05rem;">“גמעתי את הספר בשקיקה! הספר הקודם (קרמה) חזק מאוד, אבל זה (בריסטה) מרגיש לי תופס עוד יותר! הוא סוחף, מרתק, הופך את הבטן וממלא בדמעות של אושר.”</p>
+          </div>
+        </div>
+
+        <div class="carousel-container">
+          <div class="carousel-track">
+            <div class="carousel-slide">
+              <p style="font-style: italic; font-size: 1.1rem; line-height: 1.6;">“הספר וואווו! שקעתי בו בצורה עמוקה והוא פשוט סחף! ... הפרק האחרון גאוני...”</p>
+            </div>
+            <div class="carousel-slide">
+              <p style="font-style: italic; font-size: 1.1rem; line-height: 1.6;">“וואי הדר את כשרון באמת אין לי מה להגיד... אי אפשר היה לעזוב את הספר לשנייה אחת.. קיבלתי ממנו מסר כ"כ חזק.”</p>
+            </div>
+            <div class="carousel-slide">
+              <p style="font-style: italic; font-size: 1.1rem; line-height: 1.6;">“הכתיבה שלך כל כך אמיתית ופוגשת את הלב במקומות הכי רגישים. מחכה כבר לספר הבא שלך!”</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section author">
-      <div class="container author-card reveal">
-        <img src="images/img_hadar.png" alt="הדר סופר" style="max-width: 300px; width: 100%; height: auto; border-radius: 8px;">
-        <div>
+    <section class="section author" id="author">
+      <div class="container author-card reveal" style="display: flex; flex-wrap: wrap; gap: 30px; align-items: center;">
+        <img src="images/img_hadar.png" alt="הדר סופר" style="max-width: 300px; width: 100%; height: auto; border-radius: 8px; box-shadow: var(--shadow);">
+        <div style="flex: 1; min-width: 280px;">
           <p class="eyebrow">על הסופרת</p>
           <h2>הדר סופר</h2>
-          <p>הדר כותבת בעדינות, רגישות והומור, ומצליחה לגעת בנקודות שבהן עולמות שונים נפגשים. דרך הדמויות והמסע שלהן בדואט 'קרמה' ו'בריסטה', היא מזמינה את הקוראים להתבונן מחדש על קשר, הקשבה, אמונה ואהבה.</p>
+          <p class="lead">הדר סופר היא אמא לשמונה, רקדנית ומורה מוסמכת למחול, ואשת הייטק ופיתוח תוכנה בעלת 25 שנות ניסיון. מתוך נקודת המפגש הייחודית הזו, כבעלת תשובה החיה ונושמת את המורכבות, הניגודים והיופי של החברה הישראלית, היא טווה ברגישות ובהומור סיפורים עמוקים שנוגעים ישר בלב.</p>
         </div>
       </div>
     </section>
 
-<section class="section cta" id="buy">
+    <section class="section cta" id="buy">
       <div class="container reveal" style="text-align: center;">
-        <h2>רוצים להיכנס למסע של קרמה ובריסטה?</h2>
-        <p style="margin-bottom: 30px;">בחרו את הספר או הדואט המלא והתחילו לקרוא.</p>
+        <h2>מוכנים להתחיל לקרוא?</h2>
+        <p class="lead" style="margin-bottom: 20px;">בחרו את הספר או הדואט המלא והתחילו במסע.</p>
         
-        <!-- בלוק 1: הספרים המודפסים במשלוח -->
-        <h3 style="font-size: 1.2rem; color: #8B5A2B; margin-bottom: 20px; font-weight: 700;">ספרים מודפסים (במשלוח):</h3>
-        <div class="cta-actions" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-bottom: 40px; align-items: stretch;">
-          
-          <!-- כפתור 1: הדואט המלא (מודגש עם ציון החיסכון) -->
-          <div style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
-            <span style="font-size: 0.9rem; color: #00A896; font-weight: 700; background: #e6f6f5; padding: 2px 10px; border-radius: 20px;">הערכה המשתלמת!</span>
-            <a class="btn primary" style="background-color: #00A896; color: #ffffff; border: none; min-width: 220px; margin-top: auto;" href="https://meshulam.co.il/purchase?b=cf26a15d90583e101c40a8e2467d4413" target="_blank" rel="noopener">
-              רכשו את הדואט המלא <br> <span style="font-size: 0.9rem; font-weight: 400; opacity: 0.9;">בשבירת מחיר: 120 ₪</span>
+        <div class="purchase-grid">
+          <div class="purchase-card">
+            <img src="images/book-cover.png" alt="דואט קרמה ובריסטה" />
+            <h4 style="font-weight:700; margin-bottom:15px;">הדואט המלא (קרמה + בריסטה)</h4>
+            <a class="btn primary" href="https://meshulam.co.il/purchase?b=cf26a15d90583e101c40a8e2467d4413" target="_blank" rel="noopener">
+              רכישת הערכה השלמה <br> <span style="font-size: 0.85rem; font-weight: 400; opacity: 0.9;">מחיר מיוחד: 120 ₪</span>
             </a>
           </div>
 
-          <!-- כפתור 2: רק בריסטה -->
-          <div style="display: flex; flex-direction: column; align-items: center; gap: 8px; justify-content: flex-end;">
-            <a class="btn primary" style="background-color: #8B5A2B; color: #ffffff; border: none; min-width: 220px;" href="https://meshulam.co.il/purchase?b=3960c1d9ae10f39e191948188ecd9db6" target="_blank" rel="noopener">
-              רכשו רק את 'בריסטה' <br> <span style="font-size: 0.9rem; font-weight: 400; opacity: 0.9;">מחיר: 65 ₪</span>
+          <div class="purchase-card">
+            <img src="images/Cover_Barista.jpeg" alt="כריכת הספר בריסטה" />
+            <h4 style="font-weight:700; margin-bottom:15px;">הספר 'בריסטה'</h4>
+            <a class="btn primary" href="https://meshulam.co.il/purchase?b=3960c1d9ae10f39e191948188ecd9db6" target="_blank" rel="noopener">
+              רכישת בריסטה <br> <span style="font-size: 0.85rem; font-weight: 400; opacity: 0.9;">מחיר: 65 ₪</span>
             </a>
           </div>
 
-          <!-- כפתור 3: רק קרמה -->
-          <div style="display: flex; flex-direction: column; align-items: center; gap: 8px; justify-content: flex-end;">
-            <a class="btn primary light" style="min-width: 220px;" href="https://meshulam.co.il/purchase?b=f9c1762773a8a9f286a3632289c96ef9" target="_blank" rel="noopener">
-              רכשו רק את 'קרמה' <br> <span style="font-size: 0.9rem; font-weight: 400;">מחיר: 65 ₪</span>
+          <div class="purchase-card">
+            <img src="images/Cover_Crema.jpg" alt="כריכת הספר קרמה" />
+            <h4 style="font-weight:700; margin-bottom:15px;">הספר 'קרמה'</h4>
+            <a class="btn primary light" href="https://meshulam.co.il/purchase?b=f9c1762773a8a9f286a3632289c96ef9" target="_blank" rel="noopener">
+              רכישת קרמה <br> <span style="font-size: 0.85rem; font-weight: 400;">מחיר: 65 ₪</span>
             </a>
           </div>
         </div>
 
-        <hr style="border: 0; border-top: 1px solid #eee; max-width: 600px; margin: 0 auto 30px auto;" />
+        <hr style="border: 0; border-top: 1px solid var(--latte); max-width: 600px; margin: 40px auto 30px auto;" />
 
-        <!-- בלוק 2: דיגיטלי ופרק טעימה -->
-        <h3 style="font-size: 1.2rem; color: #666; margin-bottom: 15px; font-weight: 700;">אפשרויות נוספות:</h3>
         <div class="cta-actions" style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;">
-          <a class="btn primary light" style="border: 1px solid #666; color: #333;" href="https://www.e-vrit.co.il/Product/30811/%D7%A7%D7%A8%D7%9E%D7%94" target="_blank" rel="noopener">רכשו את קרמה (דיגיטל באפליקציית עברית)</a>
-          <a class="btn secondary" href="https://drive.google.com/file/d/12tlxNzzeP2KEYTHewlmIl41gtA93Ynm_/view?usp=sharing" target="_blank" rel="noopener">טעימה מהספר - קראו פרק ראשון</a>
+          <a class="btn primary light" href="https://www.e-vrit.co.il/Product/30811/%D7%A7%D7%A8%D7%9E%D7%94" target="_blank" rel="noopener">רכשו את קרמה באפליקציית 'עברית' (דיגיטל)</a>
+          <a class="btn secondary" href="https://drive.google.com/file/d/12tlxNzzeP2KEYTHewlmIl41gtA93Ynm_/view?usp=sharing" target="_blank" rel="noopener">טעימה מהספר - קראו פרק ראשון בחינם</a>
         </div>
       </div>
     </section>
@@ -183,11 +247,6 @@
   <footer class="footer">
     <div class="container footer-inner">
       <strong>קְרֵמָה - בָּריסטה | הדואט מאת הדר סופר</strong>
-      <nav>
-        <a href="https://wa.me/972544828954" target="_blank" rel="noopener">WhatsApp</a>
-        <a href="https://www.facebook.com/profile.php?id=100087284785824" target="_blank" rel="noopener">Facebook</a>
-        <a href="https://www.instagram.com/hadar.sofer/" target="_blank" rel="noopener">Instagram</a>
-      </nav>
     </div>
   </footer>
 
